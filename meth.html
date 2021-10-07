@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Hansraj College</title>
+		<style>
+			* {
+				margin: 0;
+			}
+			.box {
+				border: 1px solid black;
+			}
+			.row_img {
+				width: 20vw;
+				height: 250px;
+				object-fit: cover;
+				margin-left: 30px;
+				border-radius: 5px;
+			}
+			.circle_box {
+				height: 20vh;
+				padding: 20px;
+				border-radius: 10px;
+				margin: 10px;
+				width: 10vw;
+
+				transition: all 0.25s ease-in-out;
+			}
+
+      .active-sidebar{
+        text-decoration: underline;
+      }
+			.circle_box {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.circle_box:hover {
+				background-color: #b04400;
+				color: white;
+			}
+			.circle_box:hover span {
+				color: white;
+			}
+
+			.circle_box:hover i {
+				color: white;
+			}
+			.new {
+				margin-left: -5px;
+				padding: 5px;
+			}
+			.new > a {
+				text-decoration: none;
+				color: white;
+			}
+
+			.head {
+				transition: all 0.3s ease-in-out;
+			}
+
+			.head:hover {
+				background-color: white;
+				color: #b04400;
+			}
+
+      .ul1 {
+
+  list-style-type: none;
+  margin-top: 4px;
+  padding: 10px 0 10px 5px;
+  background: #f2f2f2;
+  margin-bottom: 2px;
+  width: 100%;
+
+
+}
+
+.li1{
+  font-size: 16px;
+  font-family: 'open_sansbold';
+  color: #fff;
+  background: #f2f2f2;
+  height: 40px;
+  width: 97%;
+  padding-left: 16px;
+  border-radius: 7px;
+  align-text: left;
+  "
+}
+
+
+.lia {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration:underline;
+}
+		</style>
+	</head>
+	<body>
+		<header
+			style="
+				background-color: #efc600;
+				width: 100vw;
+				display: flex;
+				justify-content: flex-end;
+			"
+		>
+			<div
+				style="
+					display: flex;
+					width: 50vw;
+					justify-content: space-between;
+					padding: 5px;
+					margin-right: 100px;
+				"
+			>
+				<h5 style="border-right: 2px solid black; padding: 5px">IGNOU</h5>
+				<h5 style="border-right: 2px solid black; padding: 5px">
+					Non-Teaching Posts
+				</h5>
+				<h5 style="border-right: 2px solid black; padding: 5px">
+					Open-Book Exams 2021
+				</h5>
+				<h5 style="border-right: 2px solid black; padding: 5px">Home</h5>
+				<h5 style="border-right: 2px solid black; padding: 5px">Login</h5>
+				<h5 style="border-right: 2px solid black; padding: 5px">Logout</h5>
+				<h5 style="padding: 5px">Contact Us</h5>
+			</div>
+		</header>
+
+		<nav style="display: flex; justify-content: space-around">
+			<img
+				src="https://www.hansrajcollege.ac.in/assets/front/images/logo_hindi_new.png"
+				style="object-fit: contain"
+			/>
+			<div
+				style="
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				"
+			>
+				<h1 style="font-size: 36px;
+    		color: #b04400;
+    		font-family: 'Times';
+    		text-transform: uppercase;
+    		margin-top: 16px;">Hansraj College</h1>
+
+				<h3 style="font-family: 'open_sansbold';
+    		font-size: 18px;
+    		margin-bottom: 0;">University Of Delhi</h3>
+
+				<h5>NAAC Grade A+ with CGPA 3.62</h5>
+			</div>
+
+			<div style="display: flex; align-items: center">
+				<img
+					src="https://www.hansrajcollege.ac.in/assets/front/images/azadilogo-bg.png"
+					alt=""
+				/>
+				<img
+					src="https://www.hansrajcollege.ac.in/assets/front/images/logo2.png"
+					alt=""
+				/>
+			</div>
+		</nav>
+
+		<div
+			style="
+				width: 100vw;
+				background-color: #b04400;
+				color: white;
+				padding: 0px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			"
+		>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>About</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>Faculties</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>Administration</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>Admissions</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>Academics</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>Student Corner</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>IQAC</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>Research and Innovation</span
+			>
+			<span
+				class="head"
+				style="padding: 20px; border-left: 1px solid white; cursor: pointer"
+				>IIC</span
+			>
+			<span
+				style="
+					padding: 20px;
+					border-left: 1px solid white;
+					border-right: 1px solid white;
+					cursor: pointer;
+				"
+				>NIRF</span
+			>
+		</div>
+
+
+
+
+
+    <div
+    style="
+    height: 600px;
+    width: 100%;
+    border-bottom: 2px solid #f1f1f1;
+    ">
+
+
+
+     <div
+       style="
+       height: 500px;
+       float: right;
+       border:0.5px solid #eee;
+       padding: 15px;
+       background:#fbfbfb;
+       margin-right: 100px;
+       margin-top: 10px;
+       width: 650px;
+       text-align: center;
+       "
+     >
+
+     <h2
+       style="
+       font-size: 18px;
+       text-transform: uppercase;
+       font-family: 'open_sansbold';
+       color: #b04400;
+       background: #eee;
+       height: 46px;
+       line-height: 46px;
+       padding-left: 16px;
+       margin-top: 0;
+       align-text: left;
+       "
+
+     >
+     <p style="text-align: left;">Mathematics<p>
+     </h2>
+
+     <div style="display: flex; justify-content: center">
+       <img
+         style="width: 100%;
+         margin-top: 10px;
+         height: 180px;"
+         src="https://www.hansrajcollege.ac.in/files/department/full/DEPT-mathematics.jpg"
+         alt=""
+       />
+     </div>
+     <p style="text-align:left; padding: 10px">
+      Following a tradition of dedication and excellence in this diverse subject, the department comprises of highly qualified academicians with specializations in various fields like analysis, algebra, operation research and cryptography. The students pursuing the course, B.Sc.(Hons) Mathematics offered by the department, can look forward for the development of their logical ability and analytic skills. The semester based syllabi provides a comprehensive survey of areas like analysis, algebra, mathematical modelling using differential equations, mathematical programming and statistics. A lot of emphasis is given to 'hands-on' exposure to modern software such as Mathematica, Matlab and LaTeX through practical. The Mathematics Society 'Pi' organizes seminars, quizzes, discussions and talks on regular basis for exploration beyond the prescribed syllabi. The students actively participate in other co-curricular activities in the College for their holistic development. Students graduating from the department have had a world of career options. A reasonable number go for masters in pure or applied mathematics to prepare themselves for research and teaching. Others have excelled in their chosen fields that include statistics, actuarial sciences, operation research, management, law, and the civil services
+     </p>
+
+     </div>
+
+     <div
+       style="
+       float: left;
+       height: 274px;
+       border:1px solid #e7c6ab;
+       border-radius: 5px;
+       padding: 15px;
+       background:#fff;
+       margin-left: 120px;
+       margin-top: 10px;
+       box-shadow : 0 3px 10px 0 rgba(0,0,0,0.20);
+       width: 280px;
+       text-align: center;
+       "
+     >
+
+     <h2
+       style="
+       font-size: 18px;
+       text-transform: uppercase;
+       font-family: 'open_sansbold';
+       color: #fff;
+       background: #b04400;
+       height: 46px;
+       width: 97%;
+       line-height: 46px;
+       padding-left: 16px;
+       margin-top: 0;
+       border-radius: 7px;
+       align-text: left;
+       "
+
+     >
+     <p style="text-align: left;">MATHEMATICS<p>
+     </h2>
+     <ul class="ul1">
+        <li class="li1"><a style="text-align: left;" class="lia" href="https://www.hansrajcollege.ac.in/department/5">About</a></li>
+        <li class="li1"><a style="text-align: left;" class="lia" href="https://www.hansrajcollege.ac.in/department/5/course">Courses</a></li>
+        <li class="li1"><a style="text-align: left;" class="lia" href="file:///D:/Desktop/Web%20development/yukti.html/newFINAL.html">Faculty</a></li>
+		    <li class="li1"><a style="text-align: left;" class="lia" href="#">Societies</a></li>
+        <li class="li1"><a style="text-align: left;" class="lia" href="https://www.hansrajcollege.ac.in/department/5/achivements">Awards &amp; Recognition
+        </a></li>
+
+    </ul>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+			<h1 style="text-align: center; padding: 40px; margin-bottom: 20px; color:#b04400; font-size: 24px; font-family: 'open_sansbold';
+			text-transform:uppercase;margin-bottom:25px;position: relative;">
+				Gallery
+			</h1>
+			<div style="display: flex; justify-content: center">
+				<img
+					class="row_img"
+					src="https://www.hansrajcollege.ac.in/hCPanel/albumImage/22/original/bc8979ca9c30460b32592afe54156ad9.jpg"
+					alt=""
+				/>
+				<img
+					src="https://www.hansrajcollege.ac.in/hCPanel/albumImage/21/original/b4f7be1ab00ce64f979b6898560ea984.jpg"
+					class="row_img"
+					alt=""
+				/>
+				<img
+					class="row_img"
+					src="https://www.hansrajcollege.ac.in/hCPanel/albumImage/20/original/6791ca2f783704647b8adb5ae4e14d51.jpg"
+					alt=""
+				/>
+				<img
+					class="row_img"
+					src="https://www.hansrajcollege.ac.in/hCPanel/albumImage/19/original/43bf1e10c4beed05d8b703ad8b9b6f9a.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+		<footer
+			style="
+				width: 101vw;
+				margin-left: -9px;
+				background-color: #b04400;
+				padding: 10px;
+				margin-top: 5vh;
+				display: flex;
+				color: white;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: -10px;
+			"
+		>
+		<div style="padding: 15px">
+			Code of Professional Ethics | RTI | Grievance Redressal | Forms
+		</div>
+		<footer id="FooterWraper" class="text-center">
+			<style>
+		.footer-social-icons {
+			width: 350px;
+			display: block;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+		.footer-social-icons ul {
+			padding: 0;
+			list-style: none;
+		}
+		.footer-social-icons .social-icons li {
+			vertical-align: top;
+			display: inline;
+			height: 100px;
+			padding: 0 10px;
+			text-align: center;
+		}
+		.footer-social-icons .social-icons a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		</style>
+	</ul>
+	<div class="footer-social-icons">
+		<ul class="social-icons">
+			<li>
+				<a
+					href="https://www.facebook.com/hrcduofficial/"
+					target="_blank"
+					class="social-icon"
+				>
+				<i class="fab fa-facebook"></i>
+			</li>
+			<li>
+				<a
+					href="https://twitter.com/hrcduofficial"
+					target="_blank"
+					class="social-icon"
+				>
+					<i class="fab fa-twitter"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://www.instagram.com/hrcduofficial/"
+					target="_blank"
+					class="social-icon"
+				>
+					<i class="fab fa-instagram"></i
+				></a>
+			</li>
+			<li>
+				<a
+					href="https://www.youtube.com/channel/UCds5g8WgbovWqxC5vlV7-6w"
+					target="_blank"
+					class="social-icon"
+				>
+					<i class="fab fa-youtube"></i
+				></a>
+			</li>
+		</ul>
+	</div>
+		<div style="padding: 15px">
+			Copyright © 2020 Hansraj College. All rights reserved. Powered by <a target="_blank" style="color: #ffff00" href="https://www.mobiquel.com"
+				>Mobiquel</a
+			>
+		</div>
+	</footer>
+</body>
+</html>
